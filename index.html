@@ -10,7 +10,8 @@
     <header>
         <a href="#" class="logo">Setores</a>
         <div class="toggle"></div>
-        <ul>
+        <ul class="menu">
+            <li><a href="#">Inicio</a>
             <li><a href="#">Finaceiro</a>
             <li><a href="#">Comercial</a>
             <li><a href="#">Suporte Técnico</a>
@@ -21,17 +22,49 @@
         <div class="textBx">
             <h3>Bem vindo!</h3>
             <h2>Guia de procedimentos técnicos<br><span>SquidTelecom</span></h2>
-            <a href="#" class="btn">Botão</a>
+            
         </div>
     </section>
-    <section class="about">
-        <div class="heading">
-            <h2>Finaceiro</h2>
-        </div>
+    <section class="suporte">
+      <div class="heading white">
+          <h2>GUIA DE PROCEDIMENTOS</h2>
+      </div>
+      
         <div class="content">
-            <div class="contentBx">
-               <p>Assunto a ser tratado</p> 
-            </div>
+          <div class="suporteBx">
+            <a href="tela1.html">
+            <img src="img/imgs-04.png">
+            <h2>Sem acesso</h2>
+            <p>____________________</p></a>
+        </ul>
+        </div>
+
+        <div class="suporteBx">
+            <a href="tela2.html">
+            <img src="img/imgs-05.png">
+            <h2>Lentidão</h2>
+            <p>____________________</p></a>
+        </div>
+
+        <div class="suporteBx">
+            <a href="tela3.html">
+            <img src="img/imgs-06.png">
+            <h2>Caindo</h2>
+            <p>____________________</p></a>
+        </div>
+      </div>
     </section>
+
+    <div class="Copyrigth">
+        <p>Copyrigth 2020 Squid Telecom. Todos os direitos reservados</p>
+
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>

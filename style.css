@@ -66,7 +66,16 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    transition: 0.5s;
+
 }
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
 
 header .logo{
     color: #fff;
@@ -77,6 +86,11 @@ header .logo{
     letter-spacing: 2px;
 }
 
+header.sticky .logo{
+    color: #111;
+}
+
+
 header ul{
     position: relative;
     display: flex;
@@ -85,14 +99,110 @@ header ul{
 
 header ul li{
     position: relative;
-    display: flex;
+    list-style: none;
 
 }
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 header ul li a{
     position: relative;
     display: inline-block;
     margin: 0 15px;
     color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a{
+    color: #111;
+}
+
+img {
+    max-width: 100%;
+}
+.suporte .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.suporte .content .suporteBx{
+    padding: 40px 20px;
+    color: #111;
+    max-width: 340px;
+    margin: 20px 100px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.suporte .content .suporteBx:hover{
+    background: #6e49f1;
+}
+
+.suporte .content .suporteBx img{
+    max-width: 80px;
 
 }
+
+.suporte .content .suporteBx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Copyrigth{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 20px 100px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: 0;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s; 
+        z-index: 999;
+        border: 1px solid rgba(0,0,0,0.2);
+    }
+
+    header ul li a{
+        color: #111;  
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background=size: 30px;
+
+    }
+}   
