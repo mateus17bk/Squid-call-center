@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.sec{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to left bottom, #323136, #2e2b30, #2a262a, #262023, #221b1d, #231c1e, #251c1e, #261d1f, #2d2327, #332a31, #37313a, #3b3844);
+    display: flex;
+    align-items: center;
+    padding: 100px;
+
+}
+
+
+.custom-shape-divider-bottom-1605885341 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1605885341 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 323px;
+}
+
+.custom-shape-divider-bottom-1605885341 .shape-fill {
+    fill: #447799;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .acesso{
+    color: #FFFFFF;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+}
+
+header .navigation li a{
+    color: #FFFFFF;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    max-width: 600px;
+}
+
+.content p{
+    color: #FFFFFF;
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.content a{
+    padding: 10px 30px;
+    background: #6e49f1;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
