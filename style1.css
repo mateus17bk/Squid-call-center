@@ -11,7 +11,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(to left bottom, #323136, #2e2b30, #2a262a, #262023, #221b1d, #231c1e, #251c1e, #261d1f, #2d2327, #332a31, #37313a, #3b3844);
+    background: #111;
     display: flex;
     align-items: center;
     padding: 100px;
@@ -19,24 +19,25 @@
 }
 
 
-.custom-shape-divider-bottom-1605885341 {
+.custom-shape-divider-bottom-1606396924 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1605885341 svg {
+.custom-shape-divider-bottom-1606396924 svg {
     position: relative;
     display: block;
-    width: calc(180% + 1.3px);
-    height: 323px;
+    width: calc(127% + 1.3px);
+    height: 82px;
 }
 
-.custom-shape-divider-bottom-1605885341 .shape-fill {
-    fill: #447799;
+.custom-shape-divider-bottom-1606396924 .shape-fill {
+    fill: #661010;
 }
 
 header{
@@ -76,10 +77,12 @@ header .navigation li a{
 .content {
     position: relative;
     max-width: 600px;
+    z-index: 1;
 }
 
 .content p{
-    color: #FFFFFF;
+    color: #ffffff;
+    text-shadow: 2px 0px 4px #661010;
     font-size: 5em;
     line-height: 1em;
 }
@@ -91,3 +94,69 @@ header .navigation li a{
     text-decoration: none;
     color: #fff;
 }
+
+.semacesso{
+    background-color: #661010; 
+    position: absolute;
+    bottom:0;
+    height: 90%;
+    right: 50px;
+    border-radius: 10px 20px 30px;
+    opacity: 0.9;
+    
+}
+
+@media (max-width: 991px){
+    header {
+        padding: 20px 100px;
+       
+    }
+
+    header ul.navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background: #111;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header .navigation.active{
+       display: flex; 
+    }
+
+    header .navigation li a{
+        color: #FFF;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    header .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    header .toggleMenu.active{
+        background: url(img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+
+}
+
